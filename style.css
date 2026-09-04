@@ -33,8 +33,10 @@ a {
 
 .site-header {
 	align-items: center;
+	background: var(--ink);
+	color: white;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	left: 0;
 	padding: 24px 6%;
 	position: absolute;
@@ -43,13 +45,6 @@ a {
 	z-index: 1;
 }
 
-.logo {
-	font-size: 1.25rem;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-
-.logo span,
 .hero h1 span,
 em {
 	color: var(--coral);
@@ -140,13 +135,6 @@ h1 {
 	margin-left: 18px;
 }
 
-.hero-note {
-	border-left: 1px solid rgba(255, 255, 255, 0.7);
-	font-size: 0.8rem;
-	line-height: 1.8;
-	padding-left: 14px;
-}
-
 .section {
 	padding: 110px 6%;
 }
@@ -176,17 +164,7 @@ h1 {
 
 .about-image img {
 	display: block;
-	width: 100%;
-}
-
-.image-caption {
-	background: var(--coral);
-	bottom: -16px;
-	color: white;
-	font-size: 0.8rem;
-	left: -18px;
-	padding: 8px 14px;
-	position: absolute;
+  width: 100%;
 }
 
 .about-copy {
@@ -390,10 +368,6 @@ footer {
 		flex-direction: column;
 		justify-content: flex-end;
 		min-height: 680px;
-	}
-
-	.hero-note {
-		margin-top: 55px;
 	}
 
 	.section {
