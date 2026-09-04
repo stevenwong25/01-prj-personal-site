@@ -2,10 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan | Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header stays at the top of the page. -->
+  <header class="site-header">
+    <a class="logo" href="#home">AM<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section: the first thing visitors see. -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Web development student</p>
+        <h1>Curious ideas,<br><span>carefully built.</span></h1>
+        <p class="hero-text">I’m Alex, a beginner web developer learning how to turn thoughtful ideas into useful, welcoming websites.</p>
+        <a class="button" href="#projects">See my projects <span>↓</span></a>
+      </div>
+      <p class="hero-note">Based in Portland, OR<br>Available for new ideas</p>
+    </section>
+
+    <!-- About section: a short introduction and portrait. -->
+    <section class="about section" id="about">
+      <div class="section-label">01 / About me</div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="img/me.png" alt="Portrait of Alex Morgan">
+          <span class="image-caption">Nice to meet you!</span>
+        </div>
+        <div class="about-copy">
+          <h2>Learning by making.</h2>
+          <p>I’m currently studying HTML and CSS, with JavaScript next on my learning list. I enjoy the small details that make a website feel clear, personal, and easy to use.</p>
+          <p>When I’m away from my laptop, you’ll usually find me exploring a new neighborhood, taking photos, or adding one more song to a growing playlist.</p>
+          <a class="text-link" href="#contact">Let’s connect <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section: replace these sample projects as you build your portfolio. -->
+    <section class="projects section" id="projects">
+      <div class="section-heading">
+        <div class="section-label">02 / Selected projects</div>
+        <h2>A few things<br><em>in progress.</em></h2>
+      </div>
+      <div class="project-list">
+        <article class="project-card project-featured">
+          <div class="project-number">01</div>
+          <div class="project-info">
+            <p class="project-type">Class project / HTML + CSS</p>
+            <h3>Local Coffee Guide</h3>
+            <p>A bright, simple guide to finding great coffee and a quiet place to work.</p>
+            <a class="text-link" href="#contact">View project <span>↗</span></a>
+          </div>
+          <img src="img/laptop.jpg" alt="Colorful laptop on a desk">
+        </article>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-info">
+            <p class="project-type">Practice project / HTML</p>
+            <h3>Weekend Journal</h3>
+            <p>A small personal journal page for notes, photos, and good memories.</p>
+            <a class="text-link" href="#contact">View project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-info">
+            <p class="project-type">Coming soon</p>
+            <h3>Your next idea</h3>
+            <p>This space is waiting for the next thing you create and share.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Music section: a personal detail that helps visitors get to know you. -->
+    <section class="music section" id="music">
+      <div class="section-label">03 / On repeat</div>
+      <div class="music-content">
+        <div>
+          <h2>Recent favorite<br><em>songs.</em></h2>
+          <p class="music-intro">A little soundtrack for late-night learning and long walks home.</p>
+        </div>
+        <ol class="song-list">
+          <li><span>01</span><strong>Sunset Lover</strong><small>Petit Biscuit</small></li>
+          <li><span>02</span><strong>Garden Song</strong><small>Phoebe Bridgers</small></li>
+          <li><span>03</span><strong>Something About Us</strong><small>Daft Punk</small></li>
+          <li><span>04</span><strong>Sweet Disposition</strong><small>The Temper Trap</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact section: the main way for visitors to get in touch. -->
+    <section class="contact section" id="contact">
+      <div class="section-label">04 / Contact</div>
+      <div class="contact-content">
+        <h2>Have an idea?<br><em>Say hello.</em></h2>
+        <a class="email" href="mailto:hello@alexmorgan.dev">hello@alexmorgan.dev</a>
+        <div class="social-links">
+          <a href="#contact">GitHub ↗</a>
+          <a href="#contact">LinkedIn ↗</a>
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Alex Morgan</p>
+    <p>Made while learning on the web.</p>
+  </footer>
 </body>
 </html>
