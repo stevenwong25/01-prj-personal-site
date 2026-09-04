@@ -45,7 +45,6 @@ a {
 	z-index: 1;
 }
 
-.hero h1 span,
 em {
 	color: var(--coral);
 	font-style: normal;
@@ -71,20 +70,30 @@ nav a:hover,
 }
 
 .hero {
-	align-items: flex-end;
-	background: linear-gradient(rgba(16, 43, 45, 0.2), rgba(16, 43, 45, 0.2)), url("img/hero-bg.jpg") center / cover;
+	align-items: center;
+	background: linear-gradient(rgba(16, 43, 45, 0.5), rgba(16, 43, 45, 0.5)), url("img/hero-bg.jpg") center / cover;
 	color: white;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	min-height: 720px;
 	padding: 150px 6% 70px;
 }
 
 .hero-content {
 	max-width: 650px;
+	text-align: center;
 }
 
-.eyebrow,
+.hero-image {
+	margin: 0 auto 28px;
+	max-width: 280px;
+}
+
+.hero-image img {
+	display: block;
+	width: 100%;
+}
+
 .section-label,
 .project-type {
 	font-size: 0.75rem;
@@ -93,34 +102,16 @@ nav a:hover,
 	text-transform: uppercase;
 }
 
-.eyebrow {
-	color: var(--teal);
-}
-
-h1,
 h2,
 h3,
 p {
 	margin-top: 0;
 }
 
-h1,
 h2,
 h3 {
 	font-family: Georgia, serif;
 	line-height: 1.05;
-}
-
-h1 {
-	font-size: clamp(3.5rem, 9vw, 7.5rem);
-	font-weight: normal;
-	letter-spacing: -2px;
-	margin: 20px 0 26px;
-}
-
-.hero-text {
-	font-size: 1.1rem;
-	max-width: 470px;
 }
 
 .button {
@@ -154,17 +145,6 @@ h1 {
 	display: flex;
 	gap: 10%;
 	justify-content: space-between;
-}
-
-.about-image {
-	max-width: 410px;
-	position: relative;
-	width: 42%;
-}
-
-.about-image img {
-	display: block;
-  width: 100%;
 }
 
 .about-copy {
@@ -364,10 +344,14 @@ footer {
 	}
 
 	.hero {
-		align-items: flex-start;
+		align-items: center;
 		flex-direction: column;
 		justify-content: flex-end;
 		min-height: 680px;
+	}
+
+	.hero-content {
+		width: 100%;
 	}
 
 	.section {
@@ -381,7 +365,6 @@ footer {
 		flex-direction: column;
 	}
 
-	.about-image,
 	.song-list,
 	.section-heading h2 {
 		width: 100%;
