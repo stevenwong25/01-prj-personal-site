@@ -57,9 +57,9 @@ nav {
 
 nav a,
 .social-links a {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 
@@ -356,7 +356,7 @@ footer {
 	nav {
 		flex-direction: column;
 		gap: 4px;
-		text-align: right;
+		text-align: center;
 	}
 
 	.hero {
