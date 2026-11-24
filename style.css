@@ -164,13 +164,14 @@ h3 {
 }
 
 .skills-list {
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .skill-item {
 	background: var(--cream);
+	flex: 1 1 280px;
 	padding: 24px;
 }
 
@@ -357,6 +358,7 @@ h3 {
 	color: var(--teal);
 	font-family: Georgia, serif;
 	font-size: clamp(1.3rem, 4vw, 2.8rem);
+	overflow-wrap: anywhere;
 }
 
 .social-links {
@@ -376,26 +378,46 @@ footer {
 	padding: 20px 6%;
 }
 
+/* Stack wider page layouts when there is less room. */
+@media (max-width: 850px) {
+	.about-content,
+	.music-content {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 35px;
+	}
+
+	.song-list {
+		width: 100%;
+	}
+}
+
+/* Keep navigation and content comfortable on phones. */
 @media (max-width: 700px) {
 	.site-header {
-		align-items: flex-start;
+		padding: 14px 7%;
 	}
 
 	nav {
-		flex-direction: column;
-		gap: 4px;
+		flex-wrap: wrap;
+		gap: 8px 18px;
 		text-align: center;
+		justify-content: center;
 	}
 
 	.hero {
 		align-items: center;
-		flex-direction: column;
-		justify-content: flex-end;
-		min-height: 680px;
+		min-height: 600px;
+		padding: 90px 7%;
 	}
 
 	.hero-content {
 		width: 100%;
+	}
+
+	.hero-image {
+		width: 65%;
+		max-width: 220px;
 	}
 
 	.section {
@@ -416,10 +438,6 @@ footer {
 
 	.about-copy {
 		margin-top: 55px;
-	}
-
-	.skills-list {
-		grid-template-columns: 1fr;
 	}
 
 	.section-heading h2 {
@@ -472,5 +490,16 @@ footer {
 
 	footer {
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 380px) {
+	.hero h1,
+	h2 {
+		font-size: 2rem;
+	}
+
+	.skill-item {
+		flex-basis: 100%;
 	}
 }
